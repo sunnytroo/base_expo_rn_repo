@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true,
+    "es6": true,
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "promise",
+    "chai-friendly"
+  ],
+  "settings": {
+    "version": "detect",
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "brace-style": [
+        "error",
+        "stroustrup"
+    ],
+    "max-len": [
+        "error",
+        1000,
+        {
+            "ignoreUrls": true,
+            "ignoreStrings": true,
+            "ignoreTemplateLiterals": true,
+            "ignoreRegExpLiterals": true
+        }
+    ],
+    "semi": [
+        2,
+        "never"
+    ],
+    "space-before-function-paren": [
+        2,
+        "never"
+    ],
+    "comma-dangle": [
+        "error",
+        {
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+            "functions": "ignore"
+        }
+    ],
+    "no-underscore-dangle": "off",
+    "eol-last": [
+        "error",
+        "always"
+    ],
+    "import/no-extraneous-dependencies": [
+        "error"
+    ],
+    "promise/catch-or-return": 2,
+
+    "react/prop-types": ["error", { "ignore": ["navigation", "dispatch"] }],
+
+    // Required for chai-friendly to work
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
+  }
+}
