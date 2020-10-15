@@ -11,7 +11,7 @@ Currently we're using React Native throughout our codebase (which is written in 
 # Requirements
 
 - Build a react native app with 1 screen implementing the designs contained in the `screenshots` folder
-- No logic, validation or API calls are needed
+- No validation or API calls are needed
 - All state and user input should be stored in redux
 - The app should be runnable using expo
 - Record a video/gif of you using the app and put it in the `demo` folder`
